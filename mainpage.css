@@ -1,0 +1,423 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,100&family=Roboto+Condensed&family=Sofia+Sans+Condensed:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,100&family=Roboto+Condensed&family=Rubik:wght@300&family=Sofia+Sans+Condensed:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,100&family=Roboto+Condensed&family=Rubik:wght@300&family=Sofia+Sans+Condensed:ital,wght@1,300&display=swap');
+
+body{
+  padding-left: 50px;
+  background: linear-gradient(to bottom, #ffffff, #edd8d8);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+h1{
+  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Rubik', sans-serif;
+  color: rgb(200, 139, 58);
+}
+
+p{
+  color: #665b78;
+}
+
+/*nav*/
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    background-color: transparent;
+    box-shadow: 0 2px 4px rgba(240, 236, 236, 0.1);
+    color: yellowgreen;
+  }
+  
+  .navbar__logo {
+    margin-left: 20px;
+    max-height: 60px;
+    max-width: 100px;
+  }
+  
+  .navbar__text {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .navbar__text a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333333;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.2s ease;
+  }
+  
+  .navbar__text a:hover {
+    color: #e9d41d;
+  }
+  
+
+  
+
+  
+  /*cards*/
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  .card {
+    width: 40vh;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: transparent;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform .5s;
+  }
+  
+  .card:hover {
+    transform: translateZ(10px) rotateX(20deg) rotateY(20deg);
+  }
+  
+  .card img {
+    display: block;
+    width: 100%;
+    height:100%;
+    object-fit: contain;
+  }
+  
+  .card_title {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    font: 700 1.5rem monospace;
+    text-align: center;
+    text-shadow: -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+    transform: translateY(100%);
+    transition: transform .5s;
+  }
+  
+  .card:hover .card_title {
+    transform: translateY(0);
+  }
+
+
+
+
+
+
+  /*choose by brands cards*/
+  .card-containerr {
+    display: flex;
+    border-radius: 10px;
+    padding: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .cardr {
+    background-color: #ffffff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    margin-bottom: 20px;
+    width: calc(25% - 10px);
+    
+  }
+  
+  .card-imager {
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 10px;
+    width: 80px;
+  }
+  
+  .card-imager img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .card-contentr {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .card-titler {
+    font-size: 25px;
+    margin: 10px 0 0;
+    font-family: 'Roboto Condensed', sans-serif;
+
+  }
+  
+  .card-textr {
+    font-size: 18px;
+    line-height: 1.2;
+    color: #1a1919;
+    margin: 1px 0 0;
+    font-size: 22px;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-weight: 600;
+  }
+
+
+
+  /*Glitch Button
+  button,button::after {
+    padding: 10px 50px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    color: rgb(28, 27, 27);
+    background-color: transparent;
+    position: relative;
+  }
+  
+  button::after {
+    --move1: inset(50% 50% 50% 50%);
+    --move2: inset(31% 0 40% 0);
+    --move3: inset(39% 0 15% 0);
+    --move4: inset(45% 0 40% 0);
+    --move5: inset(45% 0 6% 0);
+    --move6: inset(14% 0 61% 0);
+    clip-path: var(--move1);
+    content: 'GLITCH';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+  }
+  
+  button:hover::after {
+    animation: glitch_4011 1s;
+    text-shadow: 10 10px 10px black;
+    animation-timing-function: steps(2, end);
+    text-shadow: -3px -3px 0px #191919, 3px 3px 0px #E94BE8;
+    background-color: transparent;
+    border: 3px solid rgb(0, 255, 213);
+  }
+  
+  button:hover {
+    text-shadow: -1px -1px 0px #1df2f0, 1px 1px 0px #E94BE8;
+  }
+  
+  button:hover {
+    background-color: transparent;
+    border: 1px solid rgb(0, 255, 213);
+    box-shadow: 0px 10px 10px -10px rgb(0, 255, 213);
+  }
+  
+  @keyframes glitch_4011 {
+    0% {
+      clip-path: var(--move1);
+      transform: translate(0px,-10px);
+    }
+  
+    10% {
+      clip-path: var(--move2);
+      transform: translate(-10px,10px);
+    }
+  
+    20% {
+      clip-path: var(--move3);
+      transform: translate(10px,0px);
+    }
+  
+    30% {
+      clip-path: var(--move4);
+      transform: translate(-10px,10px);
+    }
+  
+    40% {
+      clip-path: var(--move5);
+      transform: translate(10px,-10px);
+    }
+  
+    50% {
+      clip-path: var(--move6);
+      transform: translate(-10px,10px);
+    }
+  
+    60% {
+      clip-path: var(--move1);
+      transform: translate(10px,-10px);
+    }
+  
+    70% {
+      clip-path: var(--move3);
+      transform: translate(-10px,10px);
+    }
+  
+    80% {
+      clip-path: var(--move2);
+      transform: translate(10px,-10px);
+    }
+  
+    90% {
+      clip-path: var(--move4);
+      transform: translate(-10px,10px);
+    }
+  
+    100% {
+      clip-path: var(--move1);
+      transform: translate(0);
+    }
+  }
+  */
+
+  
+
+
+  /*Shop button*/
+  .cta {
+    border: none;
+    background: none;
+  }
+  
+  .cta span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 14px;
+    padding-right: 15px;
+    text-transform: uppercase;
+  }
+  
+  .cta svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+  }
+  
+  .cta:hover svg {
+    transform: translateX(0);
+  }
+  
+  .cta:active svg {
+    transform: scale(0.9);
+  }
+  
+  .hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+  }
+  
+  .hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ed6767;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+
+
+/*Footer*/
+footer {
+  padding: 0;
+  font-family: 'Montserrat Alternates', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #193b66;
+  color: #fff;
+  padding: 20px;
+}
+
+.footer-navigation,
+.footer-contact,
+.footer-social,
+.footer-policies,
+.footer-payment-shipping {
+  width: calc(100% / 5 - 40px);
+  color: antiquewhite;
+  margin-right: 20px;
+}
+
+.footer-navigation ul,
+.footer-contact ul,
+.footer-social ul,
+.footer-policies ul,
+.footer-payment-shipping ul {
+  color: aliceblue;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-navigation h3,
+.footer-contact h3,
+.footer-social h3,
+.footer-policies h3,
+.footer-payment-shipping h3 {
+  color: aliceblue;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.footer-navigation a,
+.footer-policies a {
+  color: #444;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.footer-navigation a:hover,
+.footer-policies a:hover {
+  text-decoration: underline;
+}
+
+.footer-social  {
+  margin-bottom: 10px;
+}
+
+.footer-social img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+  
+  
+  

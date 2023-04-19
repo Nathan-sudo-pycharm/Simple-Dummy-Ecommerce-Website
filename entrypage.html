@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mainpage.css">
+
+    <link rel="icon" href="assets/images/logoshop.png" type="image/x-icon">
+
+    <!--For carousels-->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <style>
+
+    /*for carousels*/
+          .swiper {
+      	width: 400px;
+        height: 400px;
+      }
+      .swiper-slide {
+      	background-color: #000;
+      }
+      .swiper-slide img {
+      	display: block;
+      	width: 100%;
+      	height: 100%;
+      	object-fit: cover;
+      }
+      .swiper button {
+      	width: 50px;
+      	height: 50px;
+      	color: #fff;
+      	background: transparent;
+      	border: none;
+      	outline: none;
+      	transition: opacity 0.25s;
+      }
+      .swiper button:hover {
+      	opacity: 0.8;
+      }
+      .swiper button::before,
+      .swiper button::after {
+      	font-size: 24px;
+      }
+      .swiper-button-prev {
+      	left: 25px;
+      }
+      .swiper-button-next {
+      	right: 25px;
+      }
+      .swiper-pagination-bullet {
+      	background-color: #fff;
+      }
+    </style>
+  </style>
+
+</head>
+<body>
+    <!--Nav bar-->
+    <nav class="navbar">
+        <div class="navbar__logo">
+          
+        </div>
+        <div class="navbar__text">
+          <a href="accountpage.html" >Account💖</a>
+          
+          <a href="#">Home</a>
+          <a href="about.html">About❔</a>
+          <a href="#">Deals!🔥😮‍💨</a>
+          <a href="#">Delivery🚚</a>
+          <a href="contact_page.html">Contact🔍</a>
+        </div>
+      </nav>
+
+
+      
+    
+    <!-- Swiper -->
+    
+ 
+
+
+
+    <!--Shop on categories-->
+
+    <h1>Shop Our Top Categories
+      <a href="products-card-main/prodpage.html">
+        <button class="cta">
+          <span class="hover-underline-animation"> Shop now </span>
+          <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
+              <path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10"></path>
+          </svg>
+      </button>
+      </a>
+      
+    </h1>
+    <div class="cards">
+        <figure class="card">
+            <figcaption class="card_title">Women's Collections</figcaption>
+        </figure>
+    </div>
+
+    <div class="card-container">
+      
+        <figure class="card">
+          <img src="assets/images/image1.jpg" alt="Card 1">
+          <figcaption class="card_title">Electronics</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="assets/images/image2.jpg" alt="Card 2">
+          <figcaption class="card_title">Women's Collection</figcaption>
+        </figure>
+        <figure class="card">
+            <img src="assets/images/image3.jpg" alt="Card 6">
+            <figcaption class="card_title">Mens Collections</figcaption>
+          </figure>
+        <figure class="card">
+          <img src="assets/images/image.1.jpg" alt="Card 3">
+          <figcaption class="card_title">Accesories</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="assets/images/image5.jpg" alt="Card 4">
+          <figcaption class="card_title">Shoes</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="assets/images/image6.jpg" alt="Card 5">
+          <figcaption class="card_title">Kitchen Appliances</figcaption>
+        </figure>
+        
+      </div>
+      
+
+      <!--Choose by brands-->
+      <h1>Choose By Brand</h1>
+      
+      <div class="card-containerr">
+       
+        <div class="cardr">
+          <div class="card-imager">
+            <img src="assets/images/vanhuesen.png" alt="Card image">
+          </div>
+          <div class="card-contentr">
+            <h2 class="card-titler">Van Heusen </h2>
+            <p class="card-textr">Dress for success.</p>
+            
+          </div>
+        </div>
+     
+        
+        <div class="cardr">
+          <div class="card-imager">
+            <img src="assets/images/aurelia.png" alt="Card image">
+          </div>
+          <div class="card-contentr">
+            <h2 class="card-titler">Aurelia </h2>
+            <p class="card-textr">Embrace your ethnic side.</p>
+          </div>
+        </div>
+        
+        <div class="cardr">
+          <div class="card-imager">
+            <img src="assets/images/alsol.png" alt="Card image">
+          </div>
+          <div class="card-contentr">
+            <h2 class="card-titler">Allen Solly</h2>
+            <p class="card-textr">Work smart, not hard.</p>
+          </div>
+        </div>
+        
+        <div class="cardr">
+          <div class="card-imager">
+            <img src="assets/images/as.png" alt="Card image" >
+          </div>
+          <div class="card-contentr">
+            <h2 class="card-titler">ASUS</h2>
+            <p class="card-textr">In search of incredible.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-containerr">
+        <div class="cardr">
+          <div class="card-imager">
+            <img src="assets/images/samsung.png" alt="Card image">
+          </div>
+          <div class="card-contentr">
+            <h2 class="card-titler">Samsung</h2>
+            <p class="card-textr">Do what you can't.</p>
+          </div>
+        </div>
+        
+        <div class="cardr">
+          <div class="card-imager">
+            <img src="assets/images/apple.png" alt="Card image">
+          </div>
+          <div class="card-contentr">
+            <h2 class="card-titler">Apple.Inc</h2>
+            <p class="card-textr">Think diffrent.</p>
+          </div>
+        </div>
+        
+        <div class="cardr">
+          <div class="card-imager">
+            <img src="assets/images/sony.jpg" alt="Card image">
+          </div>
+          <div class="card-contentr">
+            <h2 class="card-titler">SONY</h2>
+            <p class="card-textr">Make.Believe.</p>
+          </div>
+        </div>
+        
+        <div class="cardr">
+          <div class="card-imager">
+            <img src="assets/images/pegion.png" alt="Card image">
+          </div>
+          <div class="card-contentr">
+            <h2 class="card-titler">Pegion</h2>
+            <p class="card-textr">Comfortably in control.</p>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      
+      
+      
+    <!--todays best sales-->
+    <h1>Today's deals for You!!</h1>
+
+    <a href="products-card-main/prodpage.html">
+      <button class="cta">
+        <span class="hover-underline-animation"> Shop now </span>
+        <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
+            <path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10"></path>
+        </svg>
+    </button>
+    </a>
+
+
+
+
+    <!--cards-->
+
+
+    <!--Footer-->
+    <footer>
+      <div class="footer-navigation">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="entrypage.html">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="contact_page.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h3>Contact Information</h3>
+        <ul>
+          <li>Email: nathansequeira425@gmail.com</li>
+          <li>Phone: +1 555-555-5555</li>
+          <li>Address:Yahi aas paas.575003</li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h3>Social Media</h3>
+        
+          <a href="https://github.com/Nathan-sudo-pycharm"><img src="assets/icons/instagram.svg" alt="Instagram"></a></li>
+          <a href="https://www.linkedin.com/in/nathan-sequeira-941736255/"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="Facebook"></a></li>
+          <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" alt="Twitter"></a></li>
+        
+      </div>
+      <div class="footer-policies">
+        <h3>Policies</h3>
+        <ul>
+          <li><a href="#">Terms and Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-payment-shipping">
+        <h3>Payment and Shipping</h3>
+        <ul>
+          <li>Payment Options: Credit Card, PayPal, Apple Pay</li>
+          <li>Shipping Options: Free Shipping, Expedited Shipping</li>
+        </ul>
+      </div>
+      <div class="footer-copyright">
+        <p>Copyright © 2023 Your Website. All rights reserved.</p>
+      </div>
+    </footer>
+    
+</body>
+</html>
