@@ -2,6 +2,10 @@
 
 This is an eCommerce website with a user interface (UI) developed by Nathan, in collaboration with Osheen Dcosta, Abhiram, and Sakshi.<br>
 
+## Demo <br>
+https://flourishing-marigold-8d6e41.netlify.app/<br>
+The website is hosted via https://www.netlify.com/ <br>
+
 ## Description<br>
 
 The eCommerce website is designed to provide users with a platform to browse and purchase various products online. The current version of the website focuses on the UI and includes a login form with validation.<br><br><br>
@@ -40,5 +44,3 @@ If you have any questions, suggestions, or feedback regarding the eCommerce webs
 - Nathan - nathansequeira425@gmail.com <br>
 
 
-## website<br>
-https://flourishing-marigold-8d6e41.netlify.app/<br>
